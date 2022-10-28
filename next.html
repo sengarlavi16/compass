@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Compass</title>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<center>
+  <h1 style="color:green" id="result">Report</h1>    
+  <script type="text/javascript">  
+  document.getElementById('analyze').onclick = function() {  
+var markedCheckbox = document.getElementsByName('pl');  
+for (var checkbox of markedCheckbox) {  
+  if (checkbox.checked)  
+    document.body.append(checkbox.value + ' ');  
+}  
+}
+</script>
+</center>
+</body>
+
+</html>
